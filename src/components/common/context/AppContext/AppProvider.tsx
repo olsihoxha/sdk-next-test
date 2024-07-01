@@ -10,8 +10,8 @@ import {
   useClient,
   useCatalogParams,
 } from '@/signals';
-import { useEffect, useState } from 'preact/hooks';
-import { useRef } from 'preact/compat';
+import { useEffect, useState, useRef } from 'react';
+
 
 function AppProvider({
   children,
