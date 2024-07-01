@@ -1,0 +1,73 @@
+import {
+  Canvas,
+  Meta,
+  Controls,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Stories,
+  Source,
+} from '@storybook/blocks';
+import * as LiquidProductStories from './ProductDetail.stories';
+import * as LiquidStoreSelector from './components/StoreSelector/StoreSelector.stories';
+import * as LiquidProductInfo from './components/ProductInfo/ProductInfo.stories';
+import * as LiquidImageCarousel from '../../product-image/ProductImage.stories';
+import { SBMermaid as Mermaid } from '../../../../.storybook/blocks/SBMermaid';
+
+<Meta of={LiquidProductStories} />
+
+<Title />
+<Description />
+<Canvas of={LiquidProductStories.Default} />
+#### Code Snippet
+<Source />
+<Controls />
+
+## Modules break down
+
+Given an specifc address (e.g. _100 madison ave, apt 1707, New York, NY_) and a determined upc (e.g. _00619947000020_) the [product method](https://docs.liquidcommerce.co/references/methods/) fetches from the back-end both the products and retailers availables for thar locality and specific product.
+
+```tsx
+const { products, retailers } = await client.product({
+  upcs: ['00619947000020'],
+  loc: {
+    address: {
+      one: '100 madison ave',
+      two: 'apt 1707',
+      city: 'New York',
+      state: 'NY',
+      zip: '10016',
+    },
+  },
+});
+```
+
+Thus, the [response](https://docs.liquidcommerce.co/references/methods/product#response-object) that we obtain (_prouducts_ and _retailers_) feeds the modules:
+
+<div
+  style={{
+    marginTop: '-6rem',
+    display: 'flex',
+    width: '100%',
+    justifyContent: `center`,
+    transform: 'scale(0.66)',
+  }}
+>
+  <div>
+    <h3>Image Carousel</h3>
+    <Canvas of={LiquidImageCarousel.Default} />
+  </div>
+  <div style={{ maxWidth: '600px', margin: '1rem' }}>
+    <h3>Product Info</h3>
+    <Canvas of={LiquidProductInfo.Default} />
+  </div>
+  <div style={{ minWidth: '400px' }}>
+    <h3>Store Selector</h3>
+    <Canvas of={LiquidStoreSelector.Default} />
+  </div>
+</div>
+
+### Workflow
+
+<Mermaid>`flowchart TD Start --> Stop`</Mermaid>

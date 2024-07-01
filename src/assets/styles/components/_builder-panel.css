@@ -1,0 +1,56 @@
+.builder-panel-content {
+  @apply bg-white dark:bg-gray-800 flex flex-col;
+
+  & .vertical {
+    @apply h-full;
+  }
+
+  & .horizontal {
+    @apply w-full;
+  }
+}
+
+.builder-panel-header {
+  @apply flex items-center justify-between h-16 px-6 border-b border-gray-200 dark:border-gray-700;
+}
+
+.builder-panel-body {
+  @apply p-6 h-full overflow-y-auto;
+}
+
+.builder-panel-footer {
+  @apply flex items-center justify-between py-4 px-6 border-t border-gray-200 dark:border-gray-700;
+}
+
+.builder-panel-open {
+  & .builder-panel-lock-scroll {
+    @apply overflow-hidden;
+  }
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-number-input input:focus {
+  outline: none !important;
+}
+
+.custom-number-input button:focus {
+  outline: none !important;
+}
+
+.builder-panel-overlay {
+  transition: all 0.3s ease-in-out;
+  @apply bg-black bg-opacity-80 inset-0 fixed z-30;
+}
+
+.builder-panel-overlay-after-open {
+  opacity: 1;
+}
+
+.builder-panel-overlay-before-close {
+  opacity: 0;
+}
