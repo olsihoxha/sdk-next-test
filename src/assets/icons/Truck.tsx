@@ -14,7 +14,7 @@ const Truck = ({ className }: IconProps) => {
     >
       <mask
         id="mask0_7201_1343"
-        style="mask-type:alpha"
+        style={{ maskType: 'alpha' }}
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"

@@ -7,8 +7,8 @@ import { FunctionalComponent } from 'preact';
 
 const DeliveryTime: FunctionalComponent<DeliveryTimeProps> = ({ styles, sx = '' }) => {
   return (
-    <AppProvider>
-      <ThemeProvider styles={styles}>
+    // <AppProvider>
+    //   <ThemeProvider styles={styles}>
         <Element
           deliverTime="60 mins"
           numDeliverItems={2}
@@ -16,8 +16,8 @@ const DeliveryTime: FunctionalComponent<DeliveryTimeProps> = ({ styles, sx = '' 
           sx={sx}
           shippingTime="1-2 days"
         />
-      </ThemeProvider>
-    </AppProvider>
+    //   </ThemeProvider>
+    // </AppProvider>
   );
 };
 

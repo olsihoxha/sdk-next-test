@@ -3,7 +3,7 @@ export default function ArrowDropUp() {
     <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
       <mask
         id="mask0_5110_3313"
-        style="mask-type:alpha"
+        style={{ maskType: 'alpha' }}
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"

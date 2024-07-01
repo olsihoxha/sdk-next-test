@@ -1,6 +1,6 @@
 import DeliveryTimeInfo from './DeliveryTimeInfo';
 import EditTime from './EditTime';
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 import { DeliveryInfoInit, ScheduledData } from './interfaces';
 
 const DeliveryTime = ({

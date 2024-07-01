@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'preact/compat';
+import { createContext, useContext } from 'react';
 import { SIZES } from '../../type/constants';
 import { Styles } from '../../../../types';
 

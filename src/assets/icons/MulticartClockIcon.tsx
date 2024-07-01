@@ -8,7 +8,7 @@ export default function MulticartClockIcon() {
     >
       <mask
         id="mask0_6842_3432"
-        style="mask-type:alpha"
+        style={{ maskType: 'alpha' }}
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"

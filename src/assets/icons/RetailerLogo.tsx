@@ -4,7 +4,7 @@ export default function RetailerLogo() {
       <rect y="0.5" width="64" height="64" rx="32" fill="#1F5EA9" />
       <mask
         id="mask0_4175_29339"
-        style="mask-type:alpha"
+        style={{ maskType: 'alpha' }}
         maskUnits="userSpaceOnUse"
         x="8"
         y="8"

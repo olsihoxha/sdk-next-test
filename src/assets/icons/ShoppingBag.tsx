@@ -8,7 +8,7 @@ export default function ShoppingBag() {
     >
       <mask
         id="mask0_6272_1201"
-        style="mask-type:alpha"
+        style={{ maskType: 'alpha' }}
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"

@@ -9,7 +9,7 @@ export default function RetailLogo() {
       <rect y="0.5" width="48" height="48" rx="24" fill="#1F5EA9" />
       <mask
         id="mask0_5569_7494"
-        style="mask-type:alpha"
+        style={{ maskType: 'alpha' }}
         maskUnits="userSpaceOnUse"
         x="8"
         y="8"
