@@ -1,6 +1,13 @@
-// const withPrefresh = require('@prefresh/next');
-const preact = require('preact');
-const withPreact = require('next-plugin-preact');
+module.exports = {
+    webpack: (config, { dev, isServer }) => {
+        if (!dev && !isServer) {
+            Object.assign(config.resolve.alias, {
+                react: 'preact/compat',
+                'react-dom/test-utils': 'preact/test-utils',
+                'react-dom': 'preact/compat',
+            });
+        }
 
-module.exports = withPreact({
-});
+        return config;
+    },
+};
