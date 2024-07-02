@@ -1,6 +1,5 @@
 import { FC } from 'preact/compat';
 import Element, { DoubleRangeSliderProps } from './DoubleRangeSlider';
-import register from '../../../register';
 import ThemeProvider from '../../../components/common/context/ThemeContext/ThemeProvider';
 
 const DoubleRangeSlider: FC<DoubleRangeSliderProps> = ({
@@ -20,11 +19,6 @@ const DoubleRangeSlider: FC<DoubleRangeSliderProps> = ({
   );
 };
 
-register(
-  DoubleRangeSlider,
-  'liquid-double-range-slider',
-  ['styles', 'title', 'min', 'max', 'value', 'onChange'],
-  { shadow: true },
-);
+
 
 export default DoubleRangeSlider;

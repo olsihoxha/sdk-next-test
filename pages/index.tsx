@@ -1,11 +1,11 @@
-import DeliveryTime from "../src/components/delivery-time";
+import ProductCarousel from "../src/components/product-carousel";
 import RootLayout from '../src/app/layout';
 
 export default function Home() {
     return (
         <div>
             <RootLayout>
-                <DeliveryTime/>
+                <ProductCarousel/>
             </RootLayout>
         </div>
     );

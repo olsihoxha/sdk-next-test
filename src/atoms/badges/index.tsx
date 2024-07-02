@@ -1,4 +1,4 @@
-import register from '@/register';
+
 import Element, { BadgeProps } from './components/Badge';
 import * as Heroicons from '@liquidcommerceteam/preact-heroicons';
 import { FC, useState, useEffect, JSX } from 'preact/compat';
@@ -53,13 +53,6 @@ const Badge: FC<BadgeProps> = ({
   );
 };
 
-register(
-  Badge,
-  'liquid-badge',
-  ['label', 'background', 'color', 'icon', 'iconPosition', 'border', 'borderColor', 'floating'],
-  {
-    shadow: true,
-  },
-);
+
 
 export default Badge;

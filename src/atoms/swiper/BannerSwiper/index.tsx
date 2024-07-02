@@ -1,5 +1,5 @@
 import Element from './BannerSwiper';
-import register from '../../../register';
+
 import ThemeProvider from '../../../components/common/context/ThemeContext/ThemeProvider';
 import { BannerItem } from '@/build-types';
 import { FunctionalComponent } from 'preact';
@@ -16,6 +16,5 @@ const BannerSwiper: FunctionalComponent<BannerSwiperProps> = ({ style, bannerIte
     </ThemeProvider>
   );
 };
-register(BannerSwiper, 'liquid-banner-swiper', ['bannerItems'], { shadow: true });
 
 export default BannerSwiper;

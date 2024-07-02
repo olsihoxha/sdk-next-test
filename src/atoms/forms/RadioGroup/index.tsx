@@ -1,6 +1,5 @@
 import { FC } from 'preact/compat';
 import Element, { RadioProps } from './RadioGroup';
-import register from '../../../register';
 import ThemeProvider from '../../../components/common/context/ThemeContext/ThemeProvider';
 
 const RadioGroup: FC<RadioProps> = ({ options, value, onChange, styles, title }) => {
@@ -11,8 +10,5 @@ const RadioGroup: FC<RadioProps> = ({ options, value, onChange, styles, title })
   );
 };
 
-register(RadioGroup, 'liquid-radio-group', ['styles', 'options', 'value', 'onChange', 'title'], {
-  shadow: true,
-});
 
 export default RadioGroup;

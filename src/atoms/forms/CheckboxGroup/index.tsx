@@ -1,7 +1,6 @@
 import { FC } from 'preact/compat';
 import Element, { CheckboxGroupProps } from './CheckboxGroup';
 import ThemeProvider from '../../../components/common/context/ThemeContext/ThemeProvider';
-import register from '../../../register';
 
 const CheckboxGroup: FC<CheckboxGroupProps> = ({
   items,
@@ -24,11 +23,5 @@ const CheckboxGroup: FC<CheckboxGroupProps> = ({
   );
 };
 
-register(
-  CheckboxGroup,
-  'liquid-checkbox-group',
-  ['styles', 'items', 'groupName', 'onCheckboxChange', 'checkedItems', 'showSeeAll'],
-  { shadow: true },
-);
 
 export default CheckboxGroup;

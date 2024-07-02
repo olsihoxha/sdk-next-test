@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'preact/compat';
+import { useMemo, useState } from 'react';
 import ScrollButton from '../../common/component/ImageCarousel/ScrollButton';
 import { useStyles } from '../../common/context/ThemeContext/ThemeContext';
 import { useResponsive } from '../../../hooks';

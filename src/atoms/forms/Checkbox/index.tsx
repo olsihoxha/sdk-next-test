@@ -1,6 +1,6 @@
 import { FC } from 'preact/compat';
 import Element, { CheckboxProps } from './Checkbox';
-import register from '../../../register';
+
 import ThemeProvider from '../../../components/common/context/ThemeContext/ThemeProvider';
 
 const Checkbox: FC<CheckboxProps> = ({
@@ -34,23 +34,5 @@ const Checkbox: FC<CheckboxProps> = ({
   );
 };
 
-register(
-  Checkbox,
-  'liquid-checkbox',
-  [
-    'styles',
-    'id',
-    'checked',
-    'label',
-    'labelColor',
-    'labelWeight',
-    'checkboxSize',
-    'labelTextSize',
-    'required',
-    'error',
-    // 'onChange',
-  ],
-  { shadow: true },
-);
 
 export default Checkbox;

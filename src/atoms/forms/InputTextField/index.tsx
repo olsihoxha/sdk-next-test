@@ -1,6 +1,6 @@
 import Element, { TextFieldProps } from './InputTextfield';
 import { FC } from 'preact/compat';
-import register from '../../../register';
+
 
 export const InputTextField: FC<TextFieldProps> = ({
   label,
@@ -30,22 +30,6 @@ export const InputTextField: FC<TextFieldProps> = ({
   );
 };
 
-register(
-  InputTextField,
-  'liquid-input-textfield',
-  [
-    'label',
-    'value',
-    'placeholder',
-    'id',
-    'formData',
-    'required',
-    'handleFocus',
-    'handleChange',
-    'errorMessage',
-    'disabled',
-  ],
-  { shadow: true },
-);
+
 
 export default InputTextField;

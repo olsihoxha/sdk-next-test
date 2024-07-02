@@ -1,5 +1,5 @@
 import Element, { HeaderProps } from './Header';
-import register from '@/register';
+
 import { FC } from 'preact/compat';
 
 const Header: FC<HeaderProps> = ({
@@ -32,24 +32,5 @@ const Header: FC<HeaderProps> = ({
   );
 };
 
-register(
-  Header,
-  'liquid-header',
-  [
-    'text',
-    'textSize',
-    'showCheckbox',
-    'checkboxLabel',
-    'showFrontIcon',
-    'frontIcon',
-    'showEditLink',
-    'showBackIcon',
-    'backIcon',
-    'showBackButton',
-    'showCloseIcon',
-    'closeIcon',
-  ],
-  { shadow: true },
-);
 
 export default Header;

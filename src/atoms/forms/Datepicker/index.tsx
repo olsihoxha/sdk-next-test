@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars*/
 import Element, { DatePickerProps } from './Datepicker';
 import { FC } from 'preact/compat';
-import register from '../../../register';
+
 import CalendarIcon from '../../../assets/icons/CalendarIcon';
 
 export const DatePicker: FC<DatePickerProps> = ({
@@ -41,21 +41,6 @@ export const DatePicker: FC<DatePickerProps> = ({
   );
 };
 
-register(
-  DatePicker,
-  'liquid-datepicker',
-  [
-    'icon',
-    'minDate',
-    'maxDate',
-    'setDateVal',
-    'dateVal',
-    'placeholder',
-    'setIsDateValid',
-    'inputSx',
-    'alignRight',
-  ],
-  { shadow: true },
-);
+
 
 export default DatePicker;
