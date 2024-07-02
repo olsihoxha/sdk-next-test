@@ -1,12 +1,12 @@
 import DeliveryTime from "../src/components/delivery-time";
+import RootLayout from '../src/app/layout';
 
-const Home = () => {
-
+export default function Home() {
     return (
-        <main>
+        <div>
+            <RootLayout>
                 <DeliveryTime/>
-        </main>
-    )
+            </RootLayout>
+        </div>
+    );
 }
-
-export default Home;
